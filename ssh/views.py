@@ -451,7 +451,7 @@ def upload(request):
         return render_to_response('upload.html', locals(), context_instance=RequestContext(request))       
 
 
-@require_login
+# @require_login
 def download(request):
     '''
     文件下载
