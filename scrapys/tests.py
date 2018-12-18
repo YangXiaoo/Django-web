@@ -17,4 +17,5 @@ req = urllib2.urlopen(req)
 res = req.read()
 res = unicode(res, "gbk").encode("utf8") 
 temp = json.loads(res)  
-print(temp['result']['location']['lng'],temp['result']['location']['lat'])#打印出经纬度 
+print(temp)
+# print(temp['result']['location']['lng'],temp['result']['location']['lat'])#打印出经纬度 
